@@ -2,6 +2,6 @@
 
 - In this project I deployed a website using Terraform to configure Cloudfront, ACM, and S3 resources.
 
-Site Link: www.aronblog.net
+Site Link: https://aronblog.net
 
 ![](Design/static-website-acm-cloudfront-service-diagram.png)
