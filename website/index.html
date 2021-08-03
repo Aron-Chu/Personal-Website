@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Aron Chu</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Aron<span> Chu</span></a> 
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+            
+            <nav>
+                <img id="mobile-exit" class="mobile-menu=exit" src="images/exit.svg" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#home">Home</a></li>
+                    <li><a href="#About">About</a>
+                    <li class="projects"><a href="#projects">Projects</a></li>
+                    <li class="Contact"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+        <section id="home" class="hero">
+            <div class="left-col">
+                <h1>Hello, I am Aron Chu</h1>
+                <p class="subhead">Cloud/Devops Engineer | Computer Science Student at ASU</p>
+                <ul class="icons" style="opacity: 1;">
+                    <li style="text-shadow: rgb(255, 255, 255) 0px 0px 0px; transform: none;"><a target="_blank" href="https://www.linkedin.com/in/aron-chu/" class="linkedin"><span class="label">Linkedin</span></a></li>
+                    <li style="text-shadow: rgb(255, 255, 255) 0px 0px 0px; transform: none;"><a target="_blank" href="https://github.com/Aron-Chu" class="github"><span class="label">GitHub</span></a></li>
+                    <li style="text-shadow: rgb(255, 255, 255) 0px 0px 0px; transform: none;"><a target="_blank" href="mailto:aroncloudchu@gmail.com" class="envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <div class="hero-cta">
+                    <a href="#About" class="primary-cta">Introduction</a>
+            </div>
+        </section>
+
+        <section id="About" class="features-section">
+            <div class="container">
+                <div class="col">
+                    <h2>About Me</h2>
+                    <p>  
+                    I am a 1st year student at Arizona State Unviersity hoping to become a DevOps engineer. 
+                        I hope to use my knowledge to automate and integrate workflows and make people's lives easier.
+                        My main interests are security, machine learning, and cloud computing. I hope to learn more about
+                        container orchestration and CI/CD tools. I will be graduating in spring of 2025 with a B.S in Computer Science.           
+                    </p>       
+                </div>
+                <img class="Aron" src="images/Me.jpg" alt="Aron">    
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <ul>
+                    <li>
+                    <img src="images/weatherdashboard.png" alt="weather"> 
+                    <h2>Weather Dashboard</h2>
+                    <p>Was able to deploy Nodered, InfluxDB, Grafana. Loaded a flow into node and passed in credentials for influxdb. 
+                    API used was from https://openweathermap.org/ to get weather information from cape canaveral and tempe.</p>
+                    <a href="https://github.com/Aron-Chu/terraform-docker">GitHub Link</a>
+                    </li>
+                    <li>
+                    <img src="images/django.png" alt="django"> 
+                    <h2>Django Containerization</h2>
+                    <p>When executed, the Django application would be containerized using docker-compose.</p>
+                    <a href="https://github.com/Aron-Chu/django-deployment-">GitHub Link</a>
+                    </li>
+                    <li>
+                    <img src="images/spotifyterraform.png" alt="spotify"> 
+                    <h2>Terraform Playlist</h2>
+                    <p>Automatically creates a playlist for you in Spotify using Terraform</p>
+                    <a href="https://github.com/Aron-Chu/spotify-terraform">GitHub Link</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-left">
+                    <h2>Contact</h2>
+
+                    <form actions="">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                        <input type="submit" class="send-message-cta" value="Send Message">
+                    </form>
+                </div>
+
+            </div> 
+            <img class="aws"src="images/Cloud.png" alt="Cloud">
+        </section>
+        <script>
+
+            const mobileBtn = document.getElementById("mobile-cta")
+                nav = document.querySelector("nav")
+                mobileBtnExit = document.getElementById("mobile-exit");
+
+            mobileBtn.addEventListener("click", () => {
+                nav.classList.add("menu-btn");
+            })
+            mobileBtnExit.addEventListener("click", () => {
+                nav.classList.remove("menu-btn");
+            })
+        </script>
+
+
+<body>
+</html>
