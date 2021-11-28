@@ -6,3 +6,5 @@
 Site Link: https://aronblog.net
 
 ![](Design/static-website-acm-cloudfront-service-diagram.png)
+![](Design/gitlab1.png)
+![](Design/gitlab2.png)
