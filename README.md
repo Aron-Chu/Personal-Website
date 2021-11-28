@@ -1,7 +1,7 @@
 # Personal-Website
 
 - In this project I deployed a website using Terraform to configure Cloudfront, ACM, and S3 resources. *Works on mobile 
-- Trying to containerize it and deploy it to ECR or use EBS and TravisCI 
+- Containerized and created a pipeline using gitlab for continuous integration
 
 Site Link: https://aronblog.net
 
